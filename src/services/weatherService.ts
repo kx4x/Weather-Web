@@ -1,4 +1,4 @@
-import { WeatherData } from "@/types/weather";
+import { HourlyForecast, WeatherData } from "@/types/weather";
 
 const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
 const BASE_URL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline';
@@ -24,7 +24,7 @@ export async function getWeatherData(location: string): Promise<WeatherData> {
         humidity: data.currentConditions.humidity,
         icon: data.currentConditions.icon,
       },
-      hours: data.days[0].hours.map((hour: any) => ({
+      hours: data.days[0].hours.map((hour: HourlyForecast) => ({
         datetime: hour.datetime,
         temp: hour.temp,
         conditions: hour.conditions,

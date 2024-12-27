@@ -21,7 +21,7 @@ export default function Home() {
       setError(null);
       const data = await getWeatherData(city);
       setWeatherData(data);
-    } catch (err) {
+    } catch  {
       setError('Error fetching weather data');
     } finally {
       setLoading(false);
@@ -38,13 +38,13 @@ export default function Home() {
             const data = await getWeatherData(`${latitude},${longitude}`);
             setWeatherData(data);
             setError(null);
-          } catch (err) {
+          } catch {
             setError('Error fetching weather data for your location');
           } finally {
             setLoading(false);
           }
         },
-        (error) => {
+        () => {
           setError('Error getting your location. Please allow location access.');
           setLoading(false);
         },
