@@ -29,7 +29,7 @@ A web application that allows users to check current weather conditions and fore
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/kx4x/weather-app.git
+   git clone https://github.com/kx4x/Weather-Web.git
    ```
 
 2. Install dependencies:
