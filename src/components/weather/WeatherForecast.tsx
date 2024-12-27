@@ -26,7 +26,7 @@ export function WeatherForecast({ hourlyForecast }: WeatherForecastProps) {
     >
       <Card className="bg-zinc-900/50 backdrop-blur-sm border-zinc-800 mt-4">
         <CardContent className="p-6 text-zinc-100">
-          <h3 className="text-xl font-bold mb-4">Previsão para 24 horas</h3>
+          <h3 className="text-xl font-bold mb-4">24 Hour Forecast</h3>
           <Swiper
             spaceBetween={16}
             slidesPerView="auto"
