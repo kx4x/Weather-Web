@@ -2,6 +2,9 @@
 
 A web application that allows users to check current weather conditions and forecasts for any location.
 
+Based on: [Weather App Project](https://roadmap.sh/projects/weather-app)
+Repository: [Weather Web](https://github.com/kx4x/Weather-Web)
+
 ## 🌟 Features
 
 - 🔍 Location search with autocomplete
@@ -21,7 +24,7 @@ A web application that allows users to check current weather conditions and fore
 - TypeScript
 - Tailwind CSS
 - Framer Motion for animations
-- React Swiper for the forecast carousel
+- React Swiper for forecast carousel
 - Visual Crossing Weather API
 - Lucide Icons
 
@@ -38,7 +41,7 @@ A web application that allows users to check current weather conditions and fore
    npm install
    ```
 
-3. Create a `.env.local` file in the root directory and add your Visual Crossing API key:
+3. Create a `.env.local` file in the project root and add your Visual Crossing API key:
    ```bash
    NEXT_PUBLIC_WEATHER_API_KEY=your_visual_crossing_api_key_here
    ```
